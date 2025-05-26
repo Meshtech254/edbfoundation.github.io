@@ -2,25 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>EDB Foundation</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
-            padding: 20pax;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background: #2c3e50;
+            background-color: #2c3e50;
             color: white;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
         }
-        section{
-            background: white;
+        header img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+        section {
+            background-color: white;
             padding: 20px;
-            margin-top: 20px;
+            margin: 20px;
             border-radius: 8px;
         }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+@media screen and (max-width: 600px) {
+            nav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+            header {
+                padding: 15px;
+            }
+        }
+
     </style>
     <head>
         <body>
@@ -30,10 +79,52 @@
                 <p>Creating Hope, Changing Lives</p>
             </header>
 
+            <nav>
+                <a href="#about">About</a>
+                <a href="#vision">Vision</a>
+                <a href="mission">Mission</a>
+                <a href="programs">Programs</a>
+                <a href="contact">Contact</a>
+            </nav>
+
             <section>
                 <h2>About Us</h2>
                 <p>EDB Foundation is a youth-led nonprofit organization in Kenya, focused on empowering communities through education,mental health support, and gender equality.</p>
             </section>
+
+            <section id="mision">
+                <h2>Our Vission</h2>
+                <p>A society where everyone, regardless of background or gender, has access to equal opportunities and a better future</p>
+            </section>
+
+            <section id="mission">
+                <h2>Our Mission</h2>
+                <p>To Empower individuals and communities through mental health awareness, education, gender equality, and youth development initiatives. We work collaboratively to foster hope and sustainable change</p>
+            </section>
+
+            <section id="programs">
+                <h2>What We Do</h2>
+                <ul>
+                    <li><strong>Mental Health Outreach</strong>Promoting mental wellness and breakng stigma through school visits, forums, and online campaigns</li>
+                    <li><strong>Educational Empowerment</strong>Supporting access to education for vulnerable youth and offering mentorship programs</li>
+                    <li><strong>Gender Equality</strong>Advocating for women's and girls' rights, menstrual health' and safety</li>
+                    <li><strong>Youth Empowerment</strong>Leadership training,life skills, and civic engagement opportunities</li>
+                    <li><strong>Community Events</strong>Hosting activities that brings people together to share, learn, and grow unity</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:info.edbfoundation@gmail.com">info.edbfoundation@gmail.com</a></p>
+                <p>Phone/Whatsapp: <a href="tel:+254738641078">+254738641078</a></p>
+                <p>Instagram: <a href="https://instagram.com/edbfoundation" target="_blank">EDB Foundation</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61575808226760" target="_blank">EDB Foundation</a></p>
+                <p>TikTok: <a href="https://www.tiktok.com/@edb.foundation" target="_blank">@edb.foundation</a></p>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Everyone Deserves Better Foundation. All rights reserved</p>
+            </footer>
 
         </body>
 </html>
